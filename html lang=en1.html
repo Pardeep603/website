@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY-Future College / School Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        .btn {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>MY-Future College / School<br>Registration Form</h1>
+
+    <form>
+
+        <label>Student Name:</label>
+        <input type="text" name="student_name" required>
+
+        <label>Father's Name:</label>
+        <input type="text" name="father_name" required>
+
+        <label>Mother's Name:</label>
+        <input type="text" name="mother_name">
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <label>Class / Course Applying For:</label>
+        <select name="class">
+            <option>Nursery</option>
+            <option>Class 1</option>
+            <option>Class 5</option>
+            <option>Class 10</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>MBA</option>
+        </select>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email">
+
+        <label>Address:</label>
+        <textarea rows="3"></textarea>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox"> Sports
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Music
+        <input type="checkbox"> Coding
+        <br><br>
+
+        <label>Upload Photo:</label>
+        <input type="file">
+
+        <input type="submit" value="Register" class="btn">
+
+    </form>
+</div>
+
+</body>
+</html>
